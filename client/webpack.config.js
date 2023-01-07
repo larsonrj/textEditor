@@ -24,14 +24,14 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
+        swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: "JATE logo",
         short_name: "JATE",
-        description: "Never forget your contacts!",
+        description: "Just another text editor!",
         background_color: "#225ca3",
         theme_color: "#225ca3",
         start_url: "./",
